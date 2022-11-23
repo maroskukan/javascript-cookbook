@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>My HTML page!</title>
+    <script>
+        function PromptUser() {
+            var txt;
+            var name = window.prompt("Enter your name");
+            if (name != null || name != "") {
+                txt = "Hello " + name;
+            }
+            document.getElementById('name').innerHTML = txt;
+        }
+    </script>
+</head>
+<body>
+    <button type="button"
+            onclick="PromptUser();">
+        Prompt me
+    </button>
+    <p id="name"></p>
+</body>
+</html>
